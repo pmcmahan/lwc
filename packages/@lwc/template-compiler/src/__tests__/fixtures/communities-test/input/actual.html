@@ -1,0 +1,14 @@
+<template>
+    <lightning-input
+        if:true={field.isInput}
+        type={field.inputType}
+        label={field.label}
+        name={field.name}
+        value={field.value}
+        maxlength={field.maxLength}
+        required={field.required}
+        aria-described-by={field.name}
+        class="input"
+        disabled={field.readOnly}
+    ></lightning-input>
+</template>

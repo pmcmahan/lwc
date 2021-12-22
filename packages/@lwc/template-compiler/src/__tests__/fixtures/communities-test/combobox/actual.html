@@ -1,0 +1,13 @@
+<template>
+    <lightning-combobox
+        if:true={field.isCombobox}
+        value={field.value}
+        required={field.required}
+        name={field.name}
+        label={field.label}
+        aria-described-by={field.name}
+        class="input"
+        disabled={field.readOnly}
+        options={field.options}
+    ></lightning-combobox>
+</template>

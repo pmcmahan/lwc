@@ -313,6 +313,7 @@ function transform(codeGen: CodeGen): t.Expression {
         const { name: elmName, namespace = '' } = element;
         const { name, value: attrValue } = attr;
         // Evaluate properties based on their attribute name
+        // debugger;
         const attrName = isProperty(attr) ? propertyToAttributeName(name) : name;
         const isUsedAsAttribute = isAttribute(element, attrName);
 
